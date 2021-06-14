@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>동화가든</title>
+	<style type="text/css">
+		/* navbar */
+		.container-fluid{
+			background-color: white;
+			height: 70px;
+			position: fixed;
+		}
+		.container-fluid img{
+			margin-left: 20px;
+			margin-top: 22px;
+		}
+		.nav-item{
+			display: inline-block;
+			margin-right: 20px;
+			margin-top: 50px;
+		}
+		.nav-item img{
+			display: inline-block;
+			margin-bottom: ;
+			padding: 0px;
+		}
+		.btn a{
+			text-decoration: none;
+			color: white;
+		}
+
+		/* img */
+		.in-imges{
+			text-align: center;
+		}
+		.in-imges img{
+			width: 290px;
+			height: 320px;
+		}
+		.title{
+			float: left;
+			width: 750px;
+			display: inline-block;
+			margin-left: 20px;
+			margin-top: 50px;
+		}
+		.explain{
+			margin-left: 150px;
+		}
+		.explain-top{
+			margin-bottom: 20px;
+		}
+		.explain-top h3{
+			display: inline-block;
+		}
+		.explain-top h5{
+			color: #585858;
+			margin-bottom: 20px;
+		}
+		.explain-top p{
+			font-size: 12px;
+			color: #A4A4A4;
+		}
+		.explain-content{
+			padding-top: 20px;
+			border-top: 1px lightgray solid;
+			padding-bottom: 50px;
+		}
+		.content p{
+			display: inline-block;
+		}
+		.infront{
+			color: gray;
+			display: inline-block;
+			width: 100px;
+		}
+		.side{
+			margin-top: 50px;
+			float: right;
+			width: 400px;
+			margin-right: 170px;
+			display: inline-block;
+		}
+		.star{
+			padding-left: 10px;
+			color: #e67a3c;
+		}
+
+		#review{
+			margin-left: 170px;
+			display: block;
+			float: left;
+			width: 1180px;
+			padding-top: 40px;
+			border-top: 1px solid lightgray;
+		}
+		.reviw-top h5{
+			display: inline-block;
+		}
+		.reviw-top{
+			margin-bottom: 20px;
+		}
+		.count{
+			margin-left: 10px;
+			color: #A4A4A4;
+		}
+		.on{
+			color: #e67a3c;
+		}
+		.reviw-top ul{
+			float: right;
+			list-style-type: none;
+			display: inline-block;
+		}
+		.reviw-top li{
+			padding-right: 10px;
+			padding-left: 10px;
+			border-right: 1px lightgray solid;
+			display: inline-block;
+		}
+		.reviw-top a{
+			text-decoration: none;
+			color: #585858;
+		}
+		.reviews-top p{
+			display: inline-block;
+			font-size: 14px;
+			margin-left: 10px;
+		}
+		.reviews-text{
+			margin-top: 35px;
+			color: #585858;
+
+		}
+		.reviews-text p{
+			margin-top: 10px;
+		}
+		.review-title{
+			font-size: 20px;
+			display: inline-block;
+		}
+		.visit{
+			float: right;
+			font-size: 12px;
+			color: #A4A4A4;
+		}
+		.reviews{
+			padding-bottom: 10px;
+			margin-left: 20px;
+			margin-right: 20px;
+			margin-bottom: 50px;
+			margin-top: 30px;
+			border-bottom: 1px solid lightgray;
+		}
+		.do{
+			float: right;
+		}
+		.do-1 p{
+			width: 40px;
+			display: block;
+			font-size: 12px;
+			color: #585858;
+			margin:  auto;
+		}
+		.do-1 a{
+			text-decoration: none;
+		}
+		.do-1{
+			display: inline-block;
+		}
+		.reviews-img img{
+			margin-top: 10px;
+			display: inline-block;
+		}
+		#pro{
+			border-radius: 30px;
+		}
+		.name{
+			color: #e67a3c;
+		}
+	</style>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="https://imgnews.pstatic.net/image/030/2016/09/08/850580_20160909134943_012_0005_99_20160909135715.jpg?type=w647" height="48px"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">   
+      </ul>
+      <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">EAT딜</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">맛집 리스트</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">망고 스토리</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img src="https://cdn.icon-icons.com/icons2/1248/PNG/128/user_84308.png" height="30px"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="imges">
+	<div class="in-imges">
+		<img src="https://mp-seoul-image-production-s3.mangoplate.com/325794/259007_1606218890168_7550?fit=around|512:512&crop=512:512;*,*&output-format=jpg&output-quality=80" height="300px" width="270px">
+		<img src="https://mp-seoul-image-production-s3.mangoplate.com/325794/689765_1617838314292_33226?fit=around|512:512&crop=512:512;*,*&output-format=jpg&output-quality=80" height="300px"width="270px">
+		<img src="https://mp-seoul-image-production-s3.mangoplate.com/325794/580071_1616828914414_32535?fit=around|512:512&crop=512:512;*,*&output-format=jpg&output-quality=80" height="300px" width="270px">
+      	<img src="https://mp-seoul-image-production-s3.mangoplate.com/325794/580071_1616828914414_32533?fit=around|512:512&crop=512:512;*,*&output-format=jpg&output-quality=80" height="300px" width="270px">
+      	<img src="https://mp-seoul-image-production-s3.mangoplate.com/325794/580071_1616828914414_32534?fit=around|512:512&crop=512:512;*,*&output-format=jpg&output-quality=80" height="300px" width="270px">
+	</div>
+</div>
+
+<div class="title">
+	<div class="explain">
+		<div class="explain-top">
+			<h3><b>동화가든</b></h3><h3 class="star"><b>4.3</b></h3>
+			<h5>오이도점</h5>
+			<p><img src="https://image.flaticon.com/icons/png/512/1536/1536593.png" width="20px">7,464 <img src="https://img.icons8.com/windows/452/pencil.png" width="15px">9 <img src="https://img.icons8.com/material-rounded/452/star--v1.png" width="15px">116</p>
+		</div>
+		<div class="explain-content">
+			<div class="content">
+			<p class="infront">주소</p><p>경기도 시흥시 오이도로 245</p>
+			</div>
+			<div class="content">
+			<p class="infront">전화번호</p><p>031-488-9819</p>
+			</div>
+			<div class="content">
+			<p class="infront">음식 종류</p><p>탕 / 찌개 / 전골</p>
+			</div>
+			<div class="content">
+			<p class="infront">가격대</p><p>만원미만</p>
+			</div>
+			<div class="content">
+			<p class="infront">주차</p><p>무료주차 가능</p>
+			</div>
+			<div class="content">
+			<p class="infront">영업시간</p><p>09:00 - 21:00</p>
+			</div>
+			<div class="content">
+			<p class="infront">휴일</p><p>월</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<div class="side">
+		<div style="font:normal normal 400 12px/normal dotum, sans-serif; width:400px; height:392px; color:#333; position:relative"><div style="height: 360px;"><a href="https://map.kakao.com/?urlX=431103.0&amp;urlY=1067204.0&amp;itemId=26814728&amp;q=%EB%8F%99%ED%99%94%EA%B0%80%EB%93%A0%20%EC%98%A4%EC%9D%B4%EB%8F%84%EC%A7%81%EC%98%81%EC%A0%90&amp;srcid=26814728&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank"><img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/a2341f7a3a9b52440238fb1668d8b4f0d85f1c8801f33e6ca537bff711c0e33f" width="398px" height="358px" style="border:1px solid #ccc;"></a></div><div style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);"><a href="https://map.kakao.com" target="_blank" style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:block;width:72px;height:16px"></a><div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=26814728&amp;confirmid=26814728&amp;q=%EB%8F%99%ED%99%94%EA%B0%80%EB%93%A0%20%EC%98%A4%EC%9D%B4%EB%8F%84%EC%A7%81%EC%98%81%EC%A0%90&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EB%8F%99%ED%99%94%EA%B0%80%EB%93%A0%20%EC%98%A4%EC%9D%B4%EB%8F%84%EC%A7%81%EC%98%81%EC%A0%90&amp;eX=431103.0&amp;eY=1067204.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=26814728&amp;itemId=26814728&amp;q=%EB%8F%99%ED%99%94%EA%B0%80%EB%93%A0%20%EC%98%A4%EC%9D%B4%EB%8F%84%EC%A7%81%EC%98%81%EC%A0%90&amp;urlX=431103.0&amp;urlY=1067204.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a></div></div></div>
+	</div>
+</div>
+
+<div id="review">
+	<div class="reviw-top">
+		<h5>리뷰</h5><h5 class="count">(9)</h5>
+		<ul>
+			<li class="on">전체 (9)</li>
+			<li><a href="#">맛있다 (8)</a></li>
+			<li><a href="#">괜찮다 (1)</a></li>
+			<li><a href="#">별로 (0)</a></li>
+		</ul>
+	</div>
+
+	<div class="chart">
+		<div class="dropdown">
+		  <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+		    정렬순서
+		  </button>
+		  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+		    <li><a class="dropdown-item" href="#">평점순</a></li>
+		    <li><a class="dropdown-item" href="#">최신순</a></li>
+		    <li><a class="dropdown-item" href="#">청결순</a></li>
+		  </ul>
+		</div>
+	</div>
+
+	<div class="reviews">
+		<div class="reviews-top">
+			<img src="https://mp-seoul-image-production-s3.mangoplate.com/web/resources/fljgy-rm4b8v6vni.png" width="50px;"><p class="name"><b>단율</b></p>
+			<div class="do">
+				<div class="do-1"><a href="#"><img src="https://img.icons8.com/ios/452/smiling.png" width="30px"><p>맛있다</p></a></div>
+				<div class="do-1"><a href="#"><img src="https://image.flaticon.com/icons/png/512/96/96360.png" width="30px"><p>보통</p></a></div>
+			</div>
+		</div>
+		<div class="reviews-text">
+			<h6 class="review-title"><b>동화가든(오이도직영점)_짬뽕순두부 맛집</b></h6>
+			<h6 class="visit">최근방문_'21년 4월<h6>
+			<p>
+			1. 업무차 방문한 시화호, 음식을 먹으러 대부도를 들어갈까말까 고민하던차에 다시 서울로 가야한다는 강박에 더 멀어질순 없어 그나마 찾은 오이도에서 발견한 강릉 동화가든의 직영점!!!!
+			<br><br>
+			2. 강릉본점과 많은 차이점이 보였는데, 마치 과거 처음 동화가든 방문당시와 비슷한 느낌이었다. 메뉴부터 강릉본점에는 없는 비지전이 추가되어있었고, 강릉본점에 있던 청국장은 빠져있다. 그리고 밑반찬으로 강릉본점에선 나오지 않는 볶음김치가 나오고, 강릉본점의 국물백김치는 빠져있다.
+			<br><br>
+			3. 짬뽕순두부,비지전,모두부를 먹었다.
+			 1) 짬순 : 옛날 강릉본점에서 먹었던 지나치게 매워지기 전의 맛과 비슷한데, 아쉬운건 진한 깊이가 강릉본점만 못하다. 당연히 동네는 휩쓸어버릴 맛이다. 최초방문당시 본점에서의 짬순은 재료가 흐믈흐믈할때까지 끓인느낌이었는데, 여긴 재료가 아직 살아있는친구들이 좀 보이는데, 그 때문인건지.. 깊이가 아쉽다. 다만 맛으로 비교를하면 과거 본점의 맛을 지금의 본점보다 변화없이 이어온 느낌이다. 최근 본점방문에서 아쉬웠던 부분이 채워진 기분이다.
+			 2) 비지전 : 분명 본점에선 메뉴판에 없었던 메뉴같은데 비지전이라는게 있다. 좀 늦게나와서 짬순을 절반가량 해치우고나서 맛을 봤는데, 짬순과 잘 어울린다. 모두부의경우 짬순을 먹은 뒤 먹게되면 강한 자극으로 그 특유의 맛을 느낄 수가 없는데, 기름진 전류는 이야기가 달라진다. 짬순이 지나간 혀에도 강한맛과 식감을 남기고 간다. 표현이 참 웃기지만 적당히 기름지면서 담백하다.
+			 3) 모두부 : 음.. 비지전과 같이나와 모두부특유의 순한 향을 잘 못느꼈다. 아쉬웠지만 오이도점에는 볶음김치가 있다. 두부를 볶음김치와 같이 먹으니 조화가 생각보다 좋다. 반찬의 승리다. ㅋㅋ 너나할거없이 모두부를 시켜서 그 짧은 한끼 식사동안 셀프칸 볶음김치통을 두번이가 교체하는걸 봤다 ㅋㅋㅋㅋ 
+			 <br><br>
+			4. 강릉본점에서 아쉬웠던 부분을 채울수 있어 좋다. 집에서의 거리도 그나마 낫다. 옛날 내가 환장하며 먹었던 그 짬순과 가장 비슷한 맛을 내지않나 생각한다. 깊이만 돌아오면 딱이다.
+			<br><br>
+			※ 결론
+			짬순생각나면 갔다와야지 ㅋㅋ</p>
+			<div class="reviews-img"><img src="https://mp-seoul-image-production-s3.mangoplate.com/325794/689765_1617838314292_33226?fit=around|120:120&crop=120:120;*,*&output-format=jpg&output-quality=80" width="150px"></div>
+		</div>
+	</div>
+
+	<div class="reviews">
+		<div class="reviews-top">
+			<img src="https://s3-ap-northeast-2.amazonaws.com/mp-seoul-image-production/580071_1608888668584?fit=around|56:56&crop=56:56;*,*&output-format=jpg&output-quality=80" width="50px;" id="pro"><p class="name"><b>모모마무</b></p>
+			<div class="do">
+				<div class="do-1"><a href="#"><img src="https://img.icons8.com/ios/452/smiling.png" width="30px"><p>맛있다</p></a></div>
+				<div class="do-1"><a href="#"><img src="https://image.flaticon.com/icons/png/512/96/96360.png" width="30px"><p>깨끗함</p></a></div>
+			</div>
+		</div>
+		<div class="reviews-text">
+			<h6 class="review-title"><b>오이도에서 편하게 맛보는 강릉 짬뽕순두부</b></h6>
+			<h6 class="visit">최근방문_'21년 3월<h6>
+			<p>
+			오이도에서 편하게 맛보는 강릉 짬뽕순두부.
+			<br><br>
+			강릉 갔을 때 꼭 가보고 싶었던 곳이었는데 오이도에 분점이 있었네요! 짬뽕순두부는 오후 2시까지만 판매한다길래 점심 시간 맞춰서 방문했어요. 
+			<br><br>
+			다행히 웨이팅은 없었으나 손님들이 끊임없이 들어와서 웬만하면 식사시간 전에 도착하는 게 좋을 것 같아요. 음식은 빨리 나오고 회전률도 좋기 때문에 웨이팅 있어도 빨리 빠질 듯 합니다. 다만 대기 공간이 없는게 단점..
+			<br><br>
+			빨간 국물에 고사리?+고기+두부+쭈꾸미 들어있는 짬뽕순두부는 정말 이름 그대로 짬뽕에 두부 넣은 맛이더라구요. 나물고명이 많아서 육개장같다는 느낌도 받았습니다. 두부는 완전 부드럽고 비린맛도 안나서 좋았어요. 
+			<br><br>
+			같이 나오는 밑반찬도 원산지가 다 국내산입니다. 특히 묵은지 짱맛. 
+			<br><br>
+			강릉 동화가든 웨이팅이 감당안된다면 오이도로 와서 드셔보세요.ㅎㅎ</p>
+			<div class="reviews-img">
+				<img src="https://mp-seoul-image-production-s3.mangoplate.com/325794/580071_1616828914414_32535?fit=around|120:120&crop=120:120;*,*&output-format=jpg&output-quality=80" width="150px">
+				<img src="https://mp-seoul-image-production-s3.mangoplate.com/325794/580071_1616828914414_32533?fit=around|120:120&crop=120:120;*,*&output-format=jpg&output-quality=80" width="150px">
+				<img src="https://mp-seoul-image-production-s3.mangoplate.com/325794/580071_1616828914414_32534?fit=around|120:120&crop=120:120;*,*&output-format=jpg&output-quality=80" width="150px">
+			</div>
+		</div>
+	</div>
+
+	<div class="reviews">
+		<div class="reviews-top">
+			<img src="https://s3-ap-northeast-2.amazonaws.com/mp-seoul-image-production/889593_1588513210805?fit=around|56:56&crop=56:56;*,*&output-format=jpg&output-quality=80" width="50px;" id="pro"><p class="name"><b>드라이앙</b></p>
+			<div class="do">
+				<div class="do-1"><a href="#"><img src="https://img.icons8.com/ios/452/smiling.png" width="30px"><p>맛있다</p></a></div>
+				<div class="do-1"><a href="#"><img src="https://image.flaticon.com/icons/png/512/96/96360.png" width="30px"><p>보통</p></a></div>
+			</div>
+		</div>
+		<div class="reviews-text">
+			<h6 class="review-title"><b>강릉짬뽕순두부(동화가든)</b></h6>
+			<h6 class="visit">최근방문_'21년 1월<h6>
+			<p>
+			몇일전 이 곳을 찾았다가 16시경에 재료소진 등으로 이미 마감되어 다른 식당을 찾았는데 (운좋게 우연찮게 들어간 그 식당도 가격은 세지만 정갈한 음식이 주는 맛은 훌륭했다), 이번엔 10시가 조금 넘는 시간에 도착했다. 14시까지 주문받고, 16시까지 영업.. 
+			<br><br>
+			코로나 여파 등으로 아직 5~6팀 정도뿐 사람들은 많지 않았지만, 잠시 산책하다 포장으로 추가 주문한 12시쯤에는 사람들이 밀려들기 시작했다. 코로나가 아니었던 평상시엔 정말 줄서서 기다릴듯 하다.
+			<br><br>
+			처음 나온 반찬은 3종류인데 윤기가 자르르 흘러 아침 햇빛을 받아서 그런가 싶었지만, 보기만 좋은가 했더니 맛도 나름 괜찮다. 잠시 후 나온 짬뽕순두부.. 사실 이 식당의 메인은 짬뽕이 아니라 순두부일텐데, 짬뽕도 국물맛이 훌륭하다. 밥을 말기 전후로 따지면 전후 모두 괜찮지만, 그래도 맛을 그대로 느낄수 있는 '전'이 더 낫지 않았나 싶다. 맛집으로 유명하다고 불친절하지도 않고, 음식도 순두부와 어우러져 조화롭게 맛도 좋으니, 그래서 사람들이 찾는게 아닐까 싶다. 
+			<br><br>
+			참.. 일찍 가면 식당 입구에 두부를 만들고 남은 비지를 담아뒀는데, 이건 검정 봉지에 닿아 그냥 가져가면 된다. 여기저기 붙어있듯, 100% 국산콩, 강릉산 해조류 업체와 협약을 통해 공수받고 직접 만들었다는걸 보면서 그런가보다 했는데 쉽게 비지를 주며 재료를 공개하는 자신감을 보며  정직하게 신뢰도를 쌓아간 식당이겠다 싶었다. </p>
+			<div class="reviews-img">
+				<img src="https://mp-seoul-image-production-s3.mangoplate.com/325794/889593_1609649251429_104209?fit=around|120:120&crop=120:120;*,*&output-format=jpg&output-quality=80" width="150px">
+				<img src="https://mp-seoul-image-production-s3.mangoplate.com/325794/889593_1609649251429_104203?fit=around|120:120&crop=120:120;*,*&output-format=jpg&output-quality=80" width="150px">
+				<img src="https://mp-seoul-image-production-s3.mangoplate.com/325794/889593_1609649251429_104207?fit=around|120:120&crop=120:120;*,*&output-format=jpg&output-quality=80" width="150px">
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</body>
+</html>

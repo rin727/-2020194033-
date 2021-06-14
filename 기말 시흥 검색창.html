@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+	.container-fluid{
+		background-color: white;
+		height: 70px;
+		position: fixed;
+		box-shadow: 5px 0px 10px darkgray;
+	}
+	.container-fluid img{
+		margin-left: 20px;
+		margin-top: 22px;
+	}
+	.nav-item{
+		display: inline-block;
+		margin-right: 20px;
+		margin-top: 50px;
+	}
+	.nav-item img{
+		display: inline-block;
+		margin-bottom: ;
+		padding: 0px;
+	}
+
+	#group{
+		display: inline-block;
+		width: 700px;
+		height: 1000px;
+	}
+		.card-list{
+			float: left;
+			width: 780px;
+			margin-left: 120px;
+			margin-top: 30px;
+			height: 1000px;
+			padding-top: 30px;
+			padding: auto;
+			display: inline-block;
+		}
+		.card-list h3{
+			color: #e67a3c;
+			margin-bottom: 20px;
+			margin-left: 20px;
+		}
+		.card{
+			float: left;
+			display: inline-block;
+			width: 350px;
+			min-height: 410px;
+			margin-right: 20px;
+			margin-bottom: 20px;
+			margin-top: 20px;
+			margin-left: 20px;
+		}
+		.dropdown{
+			display: inline-block;
+		}
+		.filter{
+			display: inline-block;
+			width: 100px;
+			box-shadow: 3px 3px 6px darkgray;
+			border-radius: 5px;
+			float: right;
+		}
+		.filter a{
+			text-decoration: none;
+			color: black;
+		}
+		.filter img{
+			overflow: hidden;
+			width: 30px;
+			margin-right: 10px;
+		}
+		.list-text{
+			margin-left: 20px;
+			margin-right: 20px;
+			margin-bottom: 20px;
+		}
+		.card-text1{
+			color: #585858;
+			display: inline-block;
+		}
+		.card-text2{
+			color: #848484;
+			font-size: 13px;
+			display: block;
+		}
+		.card-title{
+			color: #e67a3c;
+			display: inline-block;
+		}
+		.star{
+			display: inline-block;
+			color: #e67a3c;
+			float: right;
+		}
+		.card-body{
+			text-decoration: none;
+		}
+		.map{
+			margin-top: 90px;
+			float: right;
+			display: inline-block;
+			width: 400px;
+		}
+	</style>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="https://imgnews.pstatic.net/image/030/2016/09/08/850580_20160909134943_012_0005_99_20160909135715.jpg?type=w647" height="48px"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">   
+      </ul>
+      <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">EAT딜</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">맛집 리스트</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">망고 스토리</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img src="https://cdn.icon-icons.com/icons2/1248/PNG/128/user_84308.png" height="30px"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="group">
+<div class="card-list">
+	<h3><b>시흥 맛집 인기 검색순위</b></h3>
+	<div class="list-text">
+	<div class="dropdown">
+	  <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+	    정렬순서
+	  </button>
+	  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+	    <li><a class="dropdown-item" href="#">평점순</a></li>
+	    <li><a class="dropdown-item" href="#">최신순</a></li>
+	    <li><a class="dropdown-item" href="#">후기순</a></li>
+	    <li><a class="dropdown-item" href="#">거리순</a></li>
+	  </ul>
+	</div>
+
+	<p class="filter"><a href="#"><img src="data:image/png;base64,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">필터</a></p>
+</div>
+	<div class="card">
+		<a href="file:///C:/Users/rin72/OneDrive/%EB%B0%94%ED%83%95%20%ED%99%94%EB%A9%B4/html/%EC%8B%9C%ED%9D%A5-%EB%8F%99%ED%99%94%EA%B0%80%EB%93%A0.html">
+	  <img src="https://mp-seoul-image-production-s3.mangoplate.com/325794/259007_1606218890168_7550?fit=around|359:240&crop=359:240;*,*&output-format=jpg&output-quality=80" class="card-img-top" alt="...">
+	  <div class="card-body">
+	  	<h5 class="card-title"><b>동화가든(오이도점)</b></h5><h5 class="star">4.3</h5>
+	    <p class="card-text1">시흥시 오이도 - 오이도역<br>탕 / 찌개 / 전골</p><br>
+	    <p class="card-text2"><img src="https://image.flaticon.com/icons/png/512/1536/1536593.png" width="25px">7,460 <img src="https://img.icons8.com/windows/452/pencil.png" width="20px">9</p>
+	  </div>
+	  </a>
+	</div>
+
+	<div class="card">
+		<a href="#">
+	  <img src="https://mp-seoul-image-production-s3.mangoplate.com/added_restaurants/573810_1490848921889662.jpg?fit=around|359:240&crop=359:240;*,*&output-format=jpg&output-quality=80" class="card-img-top" alt="...">
+	  <div class="card-body">
+	  	<h5 class="card-title"><b>참소예(시흥점)</b></h5><h5 class="star">4.2</h5>
+	    <p class="card-text1">시흥시 동서로 - 시흥능곡역<br>해산물 요리</p><br>
+	    <p class="card-text2"><img src="https://image.flaticon.com/icons/png/512/1536/1536593.png" width="25px">6,519 <img src="https://img.icons8.com/windows/452/pencil.png" width="20px">10</p>
+	  </div>
+	  </a>
+	</div>
+
+	<div class="card">
+		<a href="#">
+	  <img src="https://mp-seoul-image-production-s3.mangoplate.com/added_restaurant/392901_14444932920044802?fit=around|359:240&crop=359:240;*,*&output-format=jpg&output-quality=80" width="350px" >
+	  <div class="card-body">
+	  	<h5 class="card-title"><b>박군자진주냉면(시흥점)</b></h5><h5 class="star">4.0</h5>
+	    <p class="card-text1">시흥시 동서로 - 시흥시청역<br>국수 / 면요리</p><br>
+	    <p class="card-text2"><img src="https://image.flaticon.com/icons/png/512/1536/1536593.png" width="25px">9,083 <img src="https://img.icons8.com/windows/452/pencil.png" width="20px">8</p>
+	  </div>
+	  </a>
+	</div>
+
+	<div class="card">
+		<a href="#">
+	  <img src="https://mp-seoul-image-production-s3.mangoplate.com/586167_1572220587155340.jpg?fit=around|359:240&crop=359:240;*,*&output-format=jpg&output-quality=80" width="350px" alt="...">
+	  <div class="card-body">
+	  	<h5 class="card-title"><b>릴리프커피(시흥점)</b></h5><h5 class="star">3.9</h5>
+	    <p class="card-text1">시흥시 범안로 - 소새울역<br>카페 / 디저트 / 전골</p><br>
+	    <p class="card-text2"><img src="https://image.flaticon.com/icons/png/512/1536/1536593.png" width="25px">5,728 <img src="https://img.icons8.com/windows/452/pencil.png" width="20px">13</p>
+	  </div>
+	  </a>
+	</div>
+</div>
+</div>
+
+<div class="map">
+	<div style="font:normal normal 400 12px/normal dotum, sans-serif; width:400px; height:392px; color:#333; position:relative"><div style="height: 360px;"><a href="https://map.kakao.com/?urlX=431103.0&amp;urlY=1067204.0&amp;itemId=26814728&amp;q=%EB%8F%99%ED%99%94%EA%B0%80%EB%93%A0%20%EC%98%A4%EC%9D%B4%EB%8F%84%EC%A7%81%EC%98%81%EC%A0%90&amp;srcid=26814728&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank"><img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/a2341f7a3a9b52440238fb1668d8b4f0d85f1c8801f33e6ca537bff711c0e33f" width="398px" height="358px" style="border:1px solid #ccc;"></a></div><div style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);"><a href="https://map.kakao.com" target="_blank" style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:block;width:72px;height:16px"></a><div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=26814728&amp;confirmid=26814728&amp;q=%EB%8F%99%ED%99%94%EA%B0%80%EB%93%A0%20%EC%98%A4%EC%9D%B4%EB%8F%84%EC%A7%81%EC%98%81%EC%A0%90&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EB%8F%99%ED%99%94%EA%B0%80%EB%93%A0%20%EC%98%A4%EC%9D%B4%EB%8F%84%EC%A7%81%EC%98%81%EC%A0%90&amp;eX=431103.0&amp;eY=1067204.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=26814728&amp;itemId=26814728&amp;q=%EB%8F%99%ED%99%94%EA%B0%80%EB%93%A0%20%EC%98%A4%EC%9D%B4%EB%8F%84%EC%A7%81%EC%98%81%EC%A0%90&amp;urlX=431103.0&amp;urlY=1067204.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a></div></div></div>
+</div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</body>
+</html>
